@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/docs.theme.min.css">
+    <link rel="stylesheet" href="assets/css/animsition.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Hello, world!</title>
+  </head>
+  <body  class="animsition">
+    <!-- SWIPER Progress Pagination -->
+    <div class="swiper">
+      <h1>Swiper Progress Pagination</h1>
+    </div>
+    <div class="swiper-container">
+      <div class="swiper-wrapper banner">
+        <div class="swiper-slide"><img src="assets/images/swiper/images.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="assets/images/swiper/swiper.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="assets/images/swiper/Slider.png" alt=""></div>
+        <div class="swiper-slide"><img src="assets/images/swiper/images.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="assets/images/swiper/swiper.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="assets/images/swiper/Slider.png" alt=""></div>
+        <div class="swiper-slide"><img src="assets/images/swiper/images.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="assets/images/swiper/swiper.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="assets/images/swiper/Slider.png" alt=""></div>
+      </div>
+     
+      
+      <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Navigation -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+
+
+<!-- Set up your HTML -->
+<div class="owl">
+  <h1>Owl Carousel</h1>
+</div>
+
+
+<div class="owl-carousel">
+  <div> <img src="assets/images/owl carousel/download (1).png" alt=""> </div>
+  <div><img src="assets/images/owl carousel/download.jpg" alt=""> </div>
+  <div> <img src="assets/images/owl carousel/download.png" alt=""></div>
+  <div> <img src="assets/images/owl carousel/images (1).png" alt=""> </div>
+  <div> <img src="assets/images/owl carousel/images.jpg" alt=""></div>
+  <div> <img src="assets/images/owl carousel/images.png" alt=""></div>
+  <div> <img src="assets/images/owl carousel/download.png" alt=""> </div>
+</div>
+
+<!-- counter -->
+
+<h1 class="counter1">Counter-Up</h1>
+<h1 class="counter">1,234,567</h1>
+
+<!-- Animstion -->
+
+<nav class="nav1">
+  <h1>click here for About page</h1>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link animsition-link" data-animsition-out-class="fade-out-right"
+      data-animsition-out-duration="2000" href="index.html">Home</a>
+    </li>
+    <!-- <li>
+      <a class="nav-link animsition-link" data-animsition-out-class="rotate-out"
+      data-animsition-out-duration="2000" href="about.html">About</a>
+    </li> -->
+  </ul>
+</nav>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Counter -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+   <!-- Animstion -->
+    <script src="assets/js/animsition.min.js"></script>
+  
+
+  <!-- Initialize Swiper -->
+  <script>
+    /* ========
+    Debugger plugin, simple demo plugin to console.log some of callbacks
+    ======== */
+    var myPlugin = {
+      name: 'debugger',
+      params: {
+        debugger: false,
+      },
+      on: {
+        init: function () {
+          if (!this.params.debugger) return;
+          console.log('init');
+        },
+        click: function (e) {
+          if (!this.params.debugger) return;
+          console.log('click');
+        },
+        tap: function (e) {
+          if (!this.params.debugger) return;
+          console.log('tap');
+        },
+        doubleTap: function (e) {
+          if (!this.params.debugger) return;
+          console.log('doubleTap');
+        },
+        sliderMove: function (e) {
+          if (!this.params.debugger) return;
+          console.log('sliderMove');
+        },
+        slideChange: function () {
+          if (!this.params.debugger) return;
+          console.log('slideChange', this.previousIndex, '->', this.activeIndex);
+        },
+        slideChangeTransitionStart: function () {
+          if (!this.params.debugger) return;
+          console.log('slideChangeTransitionStart');
+        },
+        slideChangeTransitionEnd: function () {
+          if (!this.params.debugger) return;
+          console.log('slideChangeTransitionEnd');
+        },
+        transitionStart: function () {
+          if (!this.params.debugger) return;
+          console.log('transitionStart');
+        },
+        transitionEnd: function () {
+          if (!this.params.debugger) return;
+          console.log('transitionEnd');
+        },
+        fromEdge: function () {
+          if (!this.params.debugger) return;
+          console.log('fromEdge');
+        },
+        reachBeginning: function () {
+          if (!this.params.debugger) return;
+          console.log('reachBeginning');
+        },
+        reachEnd: function () {
+          if (!this.params.debugger) return;
+          console.log('reachEnd');
+        },
+      },
+    };
+  </script>
+
+  <script>
+    // Install Plugin To Swiper
+    Swiper.use(myPlugin);
+
+    // Init Swiper
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      // Enable debugger
+      debugger: true,
+    });
+  </script>
+
+ <!-- Owl Carousel -->
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplaySpeed:1500,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:2,
+            nav:false
+        },
+        1000:{
+            items:2,
+            nav:true,
+            loop:false
+        }
+    }
+})
+
+  </script>
+
+<script>
+  jQuery(document).ready(function($) {
+      $('.counter').counterUp({
+          delay: 10,
+          time: 1000
+      });
+  });
+
+  // <!-- Animstion -->
+
+  $(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'fade-in',
+    outClass: 'fade-out',
+    inDuration: 1500,
+    outDuration: 800,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+});
+</script>
+ 
+  </body>
+</html>
